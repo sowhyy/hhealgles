@@ -1,0 +1,401 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+* {  margin: 0;  padding: 0;  }
+li {  list-style: none;}
+a {  text-decoration: none;  color: inherit;}
+img {  display: block;}
+body {
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Sans Mono', monospace;
+font-family: 'Noto Serif KR', serif;}
+
+body {
+  background: linear-gradient(-45deg, #FF6633, #F38A45, #ee7752);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+  100% {
+  background-position: 0% 50%;
+  }
+}
+
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #25282a;
+}
+
+figure.vid {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: -6%;
+  left: 0;
+  opacity: .9;
+}
+
+figure img.pic {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  height: 90%;
+  display: none;
+}
+
+
+h1 {
+  position: fixed;
+  top: 40px;
+  left: 60px;
+  z-index: 10;
+}
+
+h1 img {
+  width: 200px;
+  height: auto;
+}
+
+header {
+  width: 700px;
+  height: 100%;
+  background: linear-gradient(-45deg, #FF6633, #F38A45, #ee7752);
+  transform: skewX(-40deg);
+  position: fixed;
+  top: 0;
+  left: -420px;
+}
+
+header ul.gnb {
+  width: 220px;
+  position: absolute;
+  top: 150px;
+  right: 0px;
+}
+
+header ul.gnb >li {
+  position: relative;
+}
+
+header ul.gnb > li >a {
+font-family: 'Noto Sans Mono', monospace;
+  display: block;
+  width: 220px;
+  height: 50px;
+  padding-top: 15px;
+
+  color: #222;
+  box-sizing: border-box;
+  padding-right: 35px;
+  text-align: right;
+
+}
+
+header ul.gnb > li.on > a {
+  background-color: rgba(255, 115, 0, .7);
+  color: #fff;
+}
+
+header ul.gnb > li:hover > a {
+  background-color: rgba(252, 93, 67, .7);
+  transition: all 1;
+  color: #fff;
+}
+
+header ul.gnb > li > a>  em {
+  display: inline-block;
+  transform: skewX(40deg) !important;
+}
+
+header ul.gnb > li > a > em >i {
+  margin-right: 20px;
+}
+
+header ul.gnb li ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all .4s;
+}
+
+header ul.gnb > li:hover ul {
+  opacity: .8;
+  left: 205px;
+}
+
+header ul.gnb ul li a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: #222;
+  border-bottom: 1px solid #f37321;
+  font: bold 16px/2.5 arial;
+  color: #fff;
+  box-sizing: border-box;
+  padding-left: -50px;
+  margin-bottom: 3px;
+  transition: all .5s;
+  text-align: center;
+}
+
+header ul a:hover {
+  background-color: #f37321;
+  color: #333;
+}
+
+header ul.gnb > li.on ul {
+  opacity: .8;
+  left: 205px;
+  top: -10px;
+}
+
+header ul.gnb li.on ul a {
+  background-color: #444;
+  opacity: .7;
+}
+
+ul.sns {
+  position: fixed;
+  top: 40px;
+  right: 75px;
+}
+
+ul.sns li {
+  float: left;
+  margin-right: 30px;
+}
+
+ul.sns i.fa {
+  font-size: 25px;
+  color: #f37321;
+  opacity: .6;
+  transform: scale(1);
+  transition: all .5s;
+}
+
+ul.sns i.fa:hover {
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+section.txtBox {
+  position: fixed;
+  top: 200px;
+  right: 100px;
+  width: 400px;
+  height: 200px;
+
+}
+
+section.txtBox p.txt {
+  position: absolute;
+  top: 70px;
+  left: 15px;
+  font-size: 40px;
+  font-family: play;
+  color: #fff;
+  letter-spacing: -2px;
+}
+
+section.txtBox p.tit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 100px;
+  color: #f37321;
+  font-family: Monoton;
+  letter-spacing: -1px;
+}
+section.txtBox p.txt2 {
+  position: absolute;
+  top: 130px;
+  left: 15px;
+  font-size: 35px;
+  font-family: play;
+  color: #ddd;
+  letter-spacing: -2px;
+}
+
+
+div.btnContents i {
+  font-size: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+}
+
+div.btnContents i:nth-child(1) {
+  animation: ani linear 1.5s 0s infinite;
+}
+
+div.btnContents i:nth-child(2) {
+  animation: ani linear 1.5s 0.5s infinite;
+}
+
+div.btnContents i:nth-child(3) {
+  animation: ani linear 1.5s 1s infinite;
+}
+
+@keyframes ani {
+  0% {
+    right: 0;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    right: 100px;
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+section.side {
+  width: 800px;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  right: -800px;
+  background-color: #25282a;
+  opacity: .5;
+  transform: skewX(-40deg);
+  transition: all .5s;
+}
+
+section.side:hover {
+  right: -500px;
+  opacity: .8;
+}
+
+section.side div.con {
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  left: 150px;
+  bottom: 0px;
+  background: #000;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: all 1s;
+}
+
+section.side:hover div.con {
+  left: 50px;
+}
+
+section.side div.con p {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 60%;
+  left: 25px;
+}
+
+section.side div.con p em {
+  font-family: 'Noto Sans Mono', monospace;
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  color: #f37321;
+  transform: skewX(40deg);
+}
+
+section.side div.con p img {
+  width: 250px;
+  margin-left: 50px;
+  /* height: 150px; */
+  opacity: .3;
+  transition: all .5s;
+}
+
+section.side div.con p img:hover {
+  opacity: 1;
+}
+
+section.side div.con p:nth-child(1) {
+  bottom: 270px;
+  transform: translateX(200px);
+  transition: all .4s;
+}
+
+section.side div.con p:nth-child(2) {
+  bottom: 160px;
+  transform: translateX(200px);
+  transition: all .8s;
+}
+
+section.side div.con p:nth-child(3) {
+  bottom: 50px;
+  transform: translateX(200px);
+  transition: all 1.2s;
+}
+
+section.side:hover div.con p {
+  transform: translateX(0);
+}
+
+section.side div.btnContents {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  color: #f37321;
+  transform: skewX(40deg);
+}
+
+section.side:hover div.btnContents {
+  left: 700px;
+}
+
+figure img.p7 {
+  position: absolute;
+  top: 10%;
+  height: 90%;
+  display: none;
+}
+figure img.r1 {
+  position: absolute;
+  left: 24%;
+}
+figure img.r2 {
+  position: absolute;
+  left: 36%;
+}
+figure img.r3 {
+  position: absolute;
+  left: 48%;
+}
+
+section.side div.con p.menu9 {
+  position: absolute;
+  top: 83%;
+  left: 80px;
+  opacity: .5;
+}
+section.side div.con p.menu9 span {
+  font-family: 'Noto Sans Mono', monospace;
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #f37321;
+  transform: skewX(40deg);
+  text-align: center;
+}
+
+
+section.side div.con p.menu9:hover {
+  opacity: 1;
+  transition: all .5s;
+}
