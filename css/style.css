@@ -298,8 +298,18 @@ section.side div.con p {
   width: 300px;
   height: 100px;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 25px;
+}
+
+section.side div.con p img {
+  width: 100px;
+  margin-left: 100px;
+  /* height: 150px; */
+  opacity: .7;
+  transition: all .5s;
+  transform: skewX(40deg);
+  margin-bottom: 10px;
 }
 
 section.side div.con p em {
@@ -311,15 +321,14 @@ section.side div.con p em {
   transform: skewX(40deg);
 }
 
-section.side div.con p img {
-  width: 250px;
-  margin-left: 50px;
-  /* height: 150px; */
-  opacity: .3;
-  transition: all .5s;
+section.side div.con p.menu8 em:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
+
 section.side div.con p img:hover {
+  transition: all .5s;
   opacity: 1;
 }
 
@@ -380,9 +389,9 @@ figure img.r3 {
 
 section.side div.con p.menu9 {
   position: absolute;
-  top: 83%;
+  top: 82%;
   left: 80px;
-  opacity: .5;
+  opacity: .3;
 }
 section.side div.con p.menu9 span {
   font-family: 'Noto Sans Mono', monospace;
@@ -394,8 +403,8 @@ section.side div.con p.menu9 span {
   text-align: center;
 }
 
-
 section.side div.con p.menu9:hover {
   opacity: 1;
   transition: all .5s;
 }
+
